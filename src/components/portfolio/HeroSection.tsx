@@ -53,7 +53,7 @@ export function HeroSection() {
         >
           <div className="flex items-center space-x-4">
             <hr className="w-16 sm:w-24 border-primary/50" />
-            <span className="text-sm sm:text-base text-primary font-semibold tracking-wider">IT BERRIES</span>
+            <span className="text-sm sm:text-base text-primary font-semibold tracking-wider">SoZaCode</span>
             <hr className="w-16 sm:w-24 border-primary/50" />
           </div>
 
@@ -62,7 +62,7 @@ export function HeroSection() {
             onClick={handleRevisMoreClick}
             className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-primary-foreground font-semibold shadow-lg transform transition-all duration-300 hover:scale-105"
           >
-            REVIS MORE
+            Explore More
             <ArrowDown className="ml-2 h-5 w-5" />
           </Button>
         </motion.div>

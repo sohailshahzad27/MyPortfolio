@@ -59,7 +59,7 @@ export function AboutSection() {
                   {bioText}
                 </p>
                 <a
-                  href="/my-cv.pdf"
+                  href="/assets/Sohail Shahzad - Full Stack Web Developer Resume.pdf"
                   download
                   className="inline-flex items-center justify-center border border-primary text-primary hover:bg-primary/10 w-full sm:w-auto px-4 py-2 rounded-md"
                   aria-label="Download CV"
