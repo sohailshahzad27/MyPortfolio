@@ -33,15 +33,15 @@ export const TechIconMap = {
 
 export const skillsData: Skill[] = [
   // Using Now
-  { name: "HTML5", iconName: "HTML5", experience: "5+ years", category: "Using Now" },
-  { name: "CSS3", iconName: "CSS3", experience: "5+ years", category: "Using Now" },
-  { name: "JavaScript", iconName: "JavaScript", experience: "5+ years", category: "Using Now" },
-  { name: "React", iconName: "React", experience: "4+ years", category: "Using Now" },
-  { name: "Next.js", iconName: "NextJS", experience: "3+ years", category: "Using Now" },
-  { name: "Node.js", iconName: "NodeJS", experience: "3+ years", category: "Using Now" },
+  { name: "HTML5", iconName: "HTML5", experience: "1+ years", category: "Using Now" },
+  { name: "CSS3", iconName: "CSS3", experience: "1+ years", category: "Using Now" },
+  { name: "JavaScript", iconName: "JavaScript", experience: "1+ years", category: "Using Now" },
+  { name: "React", iconName: "React", experience: "1+ years", category: "Using Now" },
+  { name: "Next.js", iconName: "NextJS", experience: "1+ years", category: "Using Now" },
+  { name: "Node.js", iconName: "NodeJS", experience: "1+ years", category: "Using Now" },
   { name: "MongoDB", iconName: "MongoDB", category: "Using Now" },
-  { name: "C++", iconName: "CPP", category: "Using Now" },
-  { name: "C", iconName: "C", category: "Using Now" },
+  { name: "C++", iconName: "CPP",experience: "3+ years", category: "Using Now" },
+  { name: "C", iconName: "C", experience: "3+ years",category: "Using Now" },
   
   // Learning
   { name: "TypeScript", iconName: "TypeScript", category: "Learning" },
