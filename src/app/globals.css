@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root { /* Light Theme Variables */
+    --background: 0 0% 100%; /* White */
+    --foreground: 222 47% 11%; /* Dark Slate Blue (original dark bg) */
+
+    --card: 0 0% 98%; /* Slightly off-white for cards */
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 268 93% 55%; /* Adjusted purple for light mode */
+    --primary-foreground: 210 40% 98%; /* White text on purple */
+
+    --secondary: 0 0% 96%; /* Light grey for secondary elements */
+    --secondary-foreground: 222 47% 11%; /* Dark text on secondary */
+
+    --muted: 0 0% 90%; /* Muted backgrounds */
+    --muted-foreground: 210 30% 40%; /* Darker muted text */
+
+    --accent: 190 95% 40%; /* Adjusted cyan for light mode */
+    --accent-foreground: 0 0% 100%; /* White text on cyan */
+    
+    --accent-secondary: 170 65% 45%; /* Adjusted teal for light mode */
+    --accent-secondary-foreground: 0 0% 100%; /* White text on teal */
+
+    --destructive: 0 84% 60%; /* Standard red for destructive actions */
+    --destructive-foreground: 0 0% 98%; /* White text on red */
+
+    --border: 222 47% 85%; /* Lighter border */
+    --input: 0 0% 93%; /* Light input background */
+    --ring: 268 93% 60%; /* Ring for focus, slightly lighter purple */
+    
+    --chart-1: 12 76% 51%;
+    --chart-2: 173 58% 34%;
+    --chart-3: 197 37% 34%;
+    --chart-4: 43 74% 56%;
+    --chart-5: 27 87% 57%;
+    --radius: 0.5rem;
+
+    /* Sidebar variables for light theme */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 222 47% 20%;
+    --sidebar-primary: 268 93% 55%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 0 0% 92%;
+    --sidebar-accent-foreground: 222 47% 15%;
+    --sidebar-border: 0 0% 88%;
+    --sidebar-ring: 268 93% 60%;
+  }
+
+  .dark { /* Dark Theme Variables */
+    --background: 222 47% 11%; /* #0F172A */
+    --foreground: 210 40% 96%; /* Light Grey/White */
+
+    --card: 222 47% 16%; /* Slightly lighter than background for cards */
+    --card-foreground: 210 40% 96%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 96%;
+
+    --primary: 268 93% 66%; /* Purple #A855F7 */
+    --primary-foreground: 210 40% 98%; /* White text on purple */
+
+    --secondary: 222 47% 20%; /* Darker blue for secondary elements */
+    --secondary-foreground: 210 40% 96%; /* Light text on secondary */
+
+    --muted: 222 47% 25%; /* Muted backgrounds */
+    --muted-foreground: 210 30% 70%; /* Muted text */
+
+    --accent: 190 95% 43%; /* Cyan #06B6D4 */
+    --accent-foreground: 222 47% 11%; /* Dark text on cyan */
+    
+    --accent-secondary: 170 65% 50%; /* Teal #2DD4BF */
+    --accent-secondary-foreground: 222 47% 11%; /* Dark text on teal */
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 222 47% 25%;
+    --input: 222 47% 20%;
+    --ring: 268 93% 70%; /* Ring for focus, slightly lighter purple */
+    
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+
+    /* Sidebar variables for dark theme */
+    --sidebar-background: 222 47% 10%;
+    --sidebar-foreground: 210 40% 90%;
+    --sidebar-primary: 268 93% 66%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 222 47% 15%;
+    --sidebar-accent-foreground: 210 40% 96%;
+    --sidebar-border: 222 47% 20%;
+    --sidebar-ring: 268 93% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    /* Removed @apply dark; - ThemeProvider will handle this */
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom gradient text utility */
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-accent via-accent-secondary to-primary;
+}
